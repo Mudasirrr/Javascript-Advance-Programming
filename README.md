@@ -1,7 +1,6 @@
-### Advanced Javascript
+### Advanced Javascript⚡️ 
 
-#Reviewing Closures &amp; Prototypal Inheritance, OOP, Functional Programming, Asynchronous Javascript, Error Handling~
-
+#Reviewing Closures &amp; Prototypal Inheritance, OOP, Functional Programming, Asynchronous Javascript, Error Handling⚡️ 
 **FOUR PILLARS of OBJECT ORIENTED PROGRAMMING:**
 
 - POLYMORPHISM: ability to call same method on different objects and each object responding in a different way.  Idea behind Polymorphism in OOP, has the ability to process objects differently depending on data type and class (reuse some of the functionalities from super class to adapt to our own specific needs).
