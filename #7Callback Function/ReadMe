@@ -1,0 +1,78 @@
+ Callback Functions
+
+When a function simply accepts another function as an argument, this contained
+ function is known as a callback function. Using callback functions is a core 
+ functional programming concept, and you can find them in most JavaScript code;
+  either in simple functions like setInterval, event listening or when making 
+  API calls.
+
+Callback functions are written like so:
+
+setInterval(function() {
+  console.log('hello!');
+}, 1000);
+
+//setInterval accepts a callback function as its first parameter and also a
+ time interval. Another example using .map();
+
+const list    = ['man', 'woman', 'child']
+
+// create a new array
+// loop over the array and map the data to new content
+const newList = list.map(function(val) {
+  return val + " kind";
+});
+
+// newList = ['man kind', 'woman kind', 'child kind']
+
+In the example above, we used the .map() method to iterate through the array list, 
+the method accepts a callback function which states how each element of the array
+ will be manipulated. Callback functions can also accept arguments as well.
+Naming Callback functions
+
+Callback functions can be named or anonymous functions. In our first examples,
+ we used anonymous callback functions. Let’s look at a named callback function:
+
+function greeting(name) {
+  console.log(`Hello ${name}, welcome to Scotch!`);
+}
+
+The above function is assigned a name greeting and has an argument of name.
+ We're also using an ES6 template string. Let’s use this function as a callback
+  function.
+
+function introduction(firstName, lastName, callback) {
+  const fullName = `${firstName} ${lastName}`;
+
+  callback(fullName);
+}
+
+introduction('Chris','Nwamba', greeting); // Hello Chris Nwamba, welcome to Scotch!
+
+Notice the usage of the callback? The succeeding brackets, () after the function
+ are not used when passing the function as a parameter.
+
+Note: The callback function is not run unless called by its containing function, 
+it is called back. Hence, the term call back function
+
+Multiple functions can be created independently and used as callback functions. 
+These create multi-level functions. When this function tree created becomes too 
+large, the code becomes incomprehensible sometimes and is not easily refactored.
+ This is known as callback hell. Let’s see an example:
+
+// a bunch of functions are defined up here
+
+// lets use our functions in callback hell
+function setInfo(name) {
+  address(myAddress) {
+    officeAddress(myOfficeAddress) {
+      telephoneNumber(myTelephoneNumber) {
+        nextOfKin(myNextOfKin) {
+          console.log('done'); //let's begin to close each function! 
+        };
+      };
+    };
+  };
+}
+
+We are assuming these functions have been previously defined elsewhere. You can see how confusing it is to pass each function as callbacks. Callback functions are useful for short asynchronous operations. When working with large sets, this is not considered best practice. Because of this challenge, Promises were introduced to simplify deferred activities.
