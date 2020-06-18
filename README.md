@@ -1,6 +1,6 @@
 ### Advanced Javascript
 
-Reviewing Closures &amp; Prototypal Inheritance, OOP, Functional Programming, Asynchronous Javascript, Error Handling
+#Reviewing Closures &amp; Prototypal Inheritance, OOP, Functional Programming, Asynchronous Javascript, Error Handling~
 
 **FOUR PILLARS of OBJECT ORIENTED PROGRAMMING:**
 
@@ -18,6 +18,7 @@ Reviewing Closures &amp; Prototypal Inheritance, OOP, Functional Programming, As
 - Only way to add new properties inside is to add the this keyword
 
 **Inheritance:**
+
 
 - Assigning 'this' refers to the new object's properties created by instantiating the new Class obj.
 - With implicit binding, the 'this' keyword refers to the Object itself.
