@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<htmrll>
+    <head>
+        <meta charset="UTF-8">
+        <meta name = "viewport" content="width=device-width,initial-scale=1.0">
+        <title>Map & Filter</title>
+
+    </head>
+    <body>
+        <p>
+            MAP, ForEach and Filter these all aree the method of array.<br/>Map is used for many purposes like it can iterate on each array's element <br/>
+            also it cam return the element <br/><h1>ForEach</h1><br/> it only iterate on the element 
+            not able to return something...
+        </p>
+         <script>
+            let arr = [1,2,3,4];
+            let arr2=arr.map(x=>{
+                return (x+5);
+            })
+            ///////////////////////
+            let arr3=arr.forEach(x=>{
+                return x+1;
+            })
+            console.log('map:\n'+arr2+'\nforEach:'+arr3);
+
+
+            ///////////////////////////////////////////
+            //filter
+            ///////////////////////////////////////////
+            let arr4 = arr.filter(y=>{
+               console.log("filter"+y);
+            })
+            let arr5 = arr.filter(y=>{
+               return y>2;
+            })
+            console.log("\nfilterd value >2:"+arr5)
+
+        </script>
+    </body>
+</htmrll>
